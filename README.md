@@ -30,4 +30,4 @@ This software has been tested on:
  
  `ST2110-20-to-PNG [-r <720p|1080i>] -i <input pcap file> -o <output png file>`
  
- `-r` is the active video resolution  720p is 1280x720 progressive, 1080i is 1920x1080 interlaced.  Resolution is assumed to be "720p" if not specified.
+ `-r` is the active video resolution.  720p is 1280x720 progressive, 1080i is 1920x1080 interlaced.  Resolution is assumed to be "720p" if not specified.
