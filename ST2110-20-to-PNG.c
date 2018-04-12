@@ -3,7 +3,10 @@
 //
 // This program will search in a pcap file for the first
 // full frame of video (based on RTP marker bits) and
-// will generate a PNG file of that frame
+// will generate a PNG file of that frame.
+//
+// The file must contain ONLY packets of the desired
+// ST 2110-20 flow.
 //
 // Author: Thomas Edwards, thomas.edwards@fox.com
 // FOX Networks Engineering & Operations
@@ -25,6 +28,11 @@
 // This program depends on "lodepng", please obtain this from:
 // http://lodev.org/lodepng/
 // https://github.com/lvandeve/lodepng
+//
+// Also libpcap:
+// http://www.tcpdump.org
+// https://github.com/the-tcpdump-group/libpcap
+//
 //
 // compile with:
 // $ cc ST2110-20-to-PNG.c lodepng.c -o ST2110-20-to-PNG -lpcap
@@ -298,7 +306,7 @@ void packetHandler(u_char *userData, const struct pcap_pkthdr* pkthdr, const u_c
 
 void print_usage(){
     printf("Usage: ST2110-20-to-PNG [-r <720p|1080i>] -i <input pcap file> -o <output png file>\n");
-    prinfg("Resolution is assumed to be 720p if not specified.")
+    printf("-r is the active video resolution.  720p is 1280x720 progressive, 1080i is 1920x1080 interlaced.  Resolution is assumed to be 720p if not specified.\n");
 }
 
 int main(int argc, char **argv)
