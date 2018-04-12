@@ -8,6 +8,8 @@ will generate a PNG file of that frame.
 The file must contain ONLY packets of the desired
 ST 2110-20 flow.
 
+**Dependencies**
+
 This program depends on "lodepng", please obtain this from:
 
 http://lodev.org/lodepng/
@@ -21,8 +23,12 @@ http://www.tcpdump.org
 
 https://github.com/the-tcpdump-group/libpcap
 
+**Build Instructions**
 
-compile with:
+Install libpcap.  Have `lodepng.h` and `lodepng.c` in the compile directory.  Note that you need to rename
+`lodepng.cpp` to `lodepng.c`.
+
+Then compile with:
 
 `$ cc ST2110-20-to-PNG.c lodepng.c -o ST2110-20-to-PNG -lpcap`
 
@@ -30,7 +36,7 @@ This software has been tested on:
 
   OS X El Capitan 10.11.6
 
- Usage:
+ **Usage**
  
  `ST2110-20-to-PNG [-r <720p|1080i>] -i <input pcap file> -o <output png file>`
  
