@@ -1,5 +1,12 @@
 # ST2110-20-to-PNG
-Converts SMPTE ST 2110-20 PCAP files to PNG image file
+Converts SMPTE ST 2110-20 PCAP file to PNG image file.
+
+This program will search in a pcap file for the first
+full frame of video (based on RTP marker bits) and
+will generate a PNG file of that frame.
+
+The file must contain ONLY packets of the desired
+ST 2110-20 flow.
 
 This program depends on "lodepng", please obtain this from:
 http://lodev.org/lodepng/
