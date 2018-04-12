@@ -25,3 +25,9 @@ compile with:
 This software has been tested on:
 
   OS X El Capitan 10.11.6
+
+ Usage:
+ 
+ `ST2110-20-to-PNG [-r <720p|1080i>] -i <input pcap file> -o <output png file>`
+ 
+ Resolution is assumed to be 720p if not specified.
