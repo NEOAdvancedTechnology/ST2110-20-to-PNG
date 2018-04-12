@@ -26,7 +26,7 @@ https://github.com/the-tcpdump-group/libpcap
 **Build Instructions**
 
 Install libpcap.  Have `lodepng.h` and `lodepng.c` in the compile directory.  Note that you need to rename
-`lodepng.cpp` to `lodepng.c`.
+`lodepng.cpp` to `lodepng.c`
 
 Then compile with:
 
