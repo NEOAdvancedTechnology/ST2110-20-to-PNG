@@ -30,11 +30,14 @@ Install libpcap.  Have `lodepng.h` and `lodepng.c` in the compile directory.  No
 
 Then compile with:
 
-`$ cc ST2110-20-to-PNG.c lodepng.c -o ST2110-20-to-PNG -lpcap`
+`$ cc ST2110-20-to-PNG.c lodepng.c -o ST2110-20-to-PNG -lpcap -std=c99 -D_BSD_SOURCE`
+
+Note `-D_BSD_SOURCE`, needed becuase I am using the BSD version of UDP headers. 
 
 This software has been tested on:
 
   OS X El Capitan 10.11.6
+  Amazon Linux AMI 2017.09.1.20180307 x86_64 HVM GP2
 
  **Usage**
  
