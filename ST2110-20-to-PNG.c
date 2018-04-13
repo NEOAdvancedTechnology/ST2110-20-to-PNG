@@ -39,6 +39,7 @@
 //
 // This software has been tested on:
 //  OS X El Capitan 10.11.6
+//  Amazon Linux AMI 2017.09.1.20180307 x86_64 HVM GP2
 //
 // ========================================================
 
