@@ -35,7 +35,7 @@
 //
 //
 // compile with:
-// $ cc ST2110-20-to-PNG.c lodepng.c -o ST2110-20-to-PNG -lpcap
+// $ cc ST2110-20-to-PNG.c lodepng.c -o ST2110-20-to-PNG -lpcap -std=c99 -D_BSD_SOURCE
 //
 // This software has been tested on:
 //  OS X El Capitan 10.11.6
