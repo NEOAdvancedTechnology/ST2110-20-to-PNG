@@ -53,3 +53,9 @@ This software has been tested on:
  ST_2110_20_color_bars.pcap: ST 2110-20 PCAP capture of a few frames of 720p59.94
  
  ST_2110_20_color_bars.png: Example PNG image output
+
+**License**
+
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
